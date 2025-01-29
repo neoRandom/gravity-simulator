@@ -32,4 +32,5 @@
 *.app
 
 # Lib folder
-!lib/*
+!lib/**/*
+!**/lib/**/*
