@@ -28,7 +28,9 @@ int main(int argc, char *argv[])
     const int screenHeight = 720;
     const std::string title("RayLib - Gravity Simulator");
 
+    SetConfigFlags(FLAG_VSYNC_HINT | FLAG_MSAA_4X_HINT | FLAG_WINDOW_HIGHDPI);
     InitWindow(screenWidth, screenHeight, title.c_str());
+    // SetTargetFPS(60); // Set our game to run at 60 frames-per-second
 
     // Boolean variables
     uint8_t showGeneralDetails = 1;
@@ -58,7 +60,6 @@ int main(int argc, char *argv[])
         dotArray[i].velocity = Vector2Zero();
     }
 
-    SetTargetFPS(60); // Set our game to run at 60 frames-per-second
     //--------------------------------------------------------------------------------------
 
     // Main game loop
