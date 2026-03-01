@@ -34,3 +34,6 @@
 # Lib folder
 !lib/**/*
 !**/lib/**/*
+
+# VS Code
+.vscode/
